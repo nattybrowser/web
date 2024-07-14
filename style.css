@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px 0; /* Padding top and bottom */
+}
+
+.container {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Space elements evenly */
+  align-items: center; /* Align vertically */
+  width: 80%; /* Limit container width to 80% */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.logo {
+  flex: 1; /* Allow logo to grow */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2em; /* Adjust font size for website name */
+}
+
+nav {
+  flex: 1; /* Allow navigation to grow */
+  text-align: right; /* Align links to the right */
+}
+
+nav ul {
+  list-style: none; /* Remove default list style */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block; /* Display links horizontally */
+  margin-left: 20px; /* Space between links */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: #000;
+  font-weight: bold; /* Make links bold */
+}
+
+nav a:hover { /* Style on hover */
+  color: #333;
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  /* Styles for header and footer (background color, padding, etc.) */
+}
+
+.container {
+  /* Styles for container (if needed for header/footer layout) */
+}
+
+main,
+aside {
+  padding: 20px;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  flex: 0 0 15%; /* Set sidebar width to 15% */
+  background-color: #eee;
+}
+
+main {
+  flex: 1; /* Set main content to 85% */
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap; /* Allow posts to wrap on smaller screens */
+}
+
+.post {
+  width: calc(33% - 20px); /* Adjust width for 3 columns with margin */
+  margin: 10px;
+}
+
+.post img {
+  width: 100%;
+  cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.see-more {
+  display: none; /* Initially hide the see more button */
+  margin-top: 20px;
+}
+
+/* Animation for banner (optional) */
+.banner {
+  animation: banner-slide 10s infinite;
+}
+
+@keyframes banner-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
